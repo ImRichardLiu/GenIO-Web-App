@@ -1,19 +1,23 @@
 Rails.application.routes.draw do
 
-  get  'new'    => 'game#new',   :as => 'new_game'
-  post 'create' => 'game#create',:as => 'create_game'
-  get  'show'   => 'game#show',  :as => 'game'
-  post 'guess'  => 'game#guess', :as => 'guess'
-  get  'win'    => 'game#win',   :as => 'win_game'
-  get  'lose'   => 'game#lose',  :as => 'lose_game'
-
-  root 'game#new'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  #resources :simulators # Not sure if I'm using all of these yet
+  get  'new'    => 'simulator#new',   :as => 'new_simulator'
+  post 'create' => 'simulator#create',:as => 'create_simulator'
+  get  'show'   => 'simulator#show',  :as => 'simulator'
+
+#  get  'new'    => 'game#new',   :as => 'new_game'
+#  post 'create' => 'game#create',:as => 'create_game'
+#  get  'show'   => 'game#show',  :as => 'game'
+#  post 'guess'  => 'game#guess', :as => 'guess'
+#  get  'win'    => 'game#win',   :as => 'win_game'
+#  get  'lose'   => 'game#lose',  :as => 'lose_game'
+
+# You can have the root of your site routed with "root"
+#  root 'game#new'
+  root to: "simulator#new"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
