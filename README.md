@@ -1,8 +1,8 @@
-# Genio Web App
+# GenIO Web App
 
-Genio Web App - Frontend Prototype
+GenIO Web App - Frontend Prototype
 
-A frontend prototype for the Gen.IO autonomous vehicle test case simulator. Prototype aims to portray what a future web interface displaying the generated test cases may look like. 
+A frontend prototype for the GenIO autonomous vehicle test case simulator. Prototype aims to portray what a future web interface displaying the generated test cases may look like. 
 
 ## Installation and Deployment:
 
