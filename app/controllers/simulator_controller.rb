@@ -11,7 +11,7 @@ class SimulatorController < ApplicationController
 
   def show
     @file = Simulator.generate
-    @file_string = "test_case_" + @file.to_s + ".jpeg"
+    @file_string = "genio_case_" + @file.to_s + ".jpeg"
     puts(@file_string)
     # status = @game.check_win_or_lose
   end
